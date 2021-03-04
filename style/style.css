@@ -46,13 +46,12 @@ body {
   right: 9.5;
   background-color:#0000ff;
 }
-#homehover {top:220px}
 #aboutmehover {top:280px}
 #aboutuhover {top:340px}
-#langhover {top:400px}
-#projecthover {top:459.5px}
-#oshover {top:520px}
-#disclaimerhover {top:610px}
+#langhover {top:340px}
+#projecthover {top:400px}
+#oshover {top:459.5px}
+#disclaimerhover {top:550px}
 #pro {
   border: 2.2px solid #000000;
   text-align:center;

@@ -1,5 +1,4 @@
 aboutmeclick=0;
-aboutuclick=0;
 langsclick=0;
 projectclick=0;
 osclick=0;
@@ -7,16 +6,6 @@ bmclick=0;
 function aboutme() {
 	aboutmeclick += 1;
 	document.getElementById("aboutme").style.display="block";
-	document.getElementById("aboutu").style.display="none";
-	document.getElementById("lang").style.display="none";
-	document.getElementById("projects").style.display="none";
-	document.getElementById("os").style.display="none";
-	document.getElementById("disclaimer").style.display="none";
-}
-function aboutu() {
-	aboutuclick+=1;
-	document.getElementById("aboutme").style.display="none";
-	document.getElementById("aboutu").style.display="block";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
 	document.getElementById("os").style.display="none";
@@ -25,7 +14,6 @@ function aboutu() {
 function langs() {
 	langsclick+=1;
 	document.getElementById("aboutme").style.display="none";
-	document.getElementById("aboutu").style.display="none";
 	document.getElementById("lang").style.display="block";
 	document.getElementById("projects").style.display="none";
 	document.getElementById("os").style.display="none";
@@ -34,7 +22,6 @@ function langs() {
 function project() {
 	projectclick+=1;
 	document.getElementById("aboutme").style.display="none";
-	document.getElementById("aboutu").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="block";
 	document.getElementById("os").style.display="none";
@@ -43,7 +30,6 @@ function project() {
 function os() {
 	osclick+=1;
 	document.getElementById("aboutme").style.display="none";
-	document.getElementById("aboutu").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
 	document.getElementById("os").style.display="block";
@@ -52,7 +38,6 @@ function os() {
 function bm() {
 	bmclick+=1;
 	document.getElementById("aboutme").style.display="none";
-	document.getElementById("aboutu").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
 	document.getElementById("os").style.display="none";
