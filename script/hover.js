@@ -1,10 +1,21 @@
+homeclick=0;
 aboutmeclick=0;
 langsclick=0;
 projectclick=0;
 osclick=0;
 bmclick=0;
+function home() {
+	homeclick += 1;
+	document.getElementById("homepg").style.display="block";
+	document.getElementById("aboutme").style.display="none";
+	document.getElementById("lang").style.display="none";
+	document.getElementById("projects").style.display="none";
+	document.getElementById("os").style.display="none";
+	document.getElementById("disclaimer").style.display="none";
+}
 function aboutme() {
 	aboutmeclick += 1;
+	document.getElementById("homepg").style.display="none";
 	document.getElementById("aboutme").style.display="block";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
@@ -13,6 +24,7 @@ function aboutme() {
 }
 function langs() {
 	langsclick+=1;
+	document.getElementById("homepg").style.display="none";
 	document.getElementById("aboutme").style.display="none";
 	document.getElementById("lang").style.display="block";
 	document.getElementById("projects").style.display="none";
@@ -21,6 +33,7 @@ function langs() {
 }
 function project() {
 	projectclick+=1;
+	document.getElementById("homepg").style.display="none";
 	document.getElementById("aboutme").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="block";
@@ -29,6 +42,7 @@ function project() {
 }
 function os() {
 	osclick+=1;
+	document.getElementById("homepg").style.display="none";
 	document.getElementById("aboutme").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
@@ -37,6 +51,7 @@ function os() {
 }
 function bm() {
 	bmclick+=1;
+	document.getElementById("homepg").style.display="none";
 	document.getElementById("aboutme").style.display="none";
 	document.getElementById("lang").style.display="none";
 	document.getElementById("projects").style.display="none";
