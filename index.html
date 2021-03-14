@@ -4,6 +4,7 @@
 	<title>h4ck3r@parrot(parrothacker1)</title>
   </head>
   <body>
+	<link href="//cdn.jsdelivr.net/gh/Lukas-W/font-logos@v0.16/assets/font-logos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
  <form>
@@ -16,9 +17,48 @@
 	 <br><br><br><br>
 	  <a id="link14"><b>Give me A text Editor and you will know $whoami</b></a><br><br><br><br>
 	  <br><br><br>
+	  <form style="text-align:center" id="homepg">
+	<i id="ico1" style="display:block" class="fl-archlabs animated fadeIn"></i>
+	<i id="ico2" class="fl-archlinux animated fadeIn"></i>
+	<i id="ico3" class="fl-aosc animated fadeIn"></i>
+	<i id="ico4" class="fl-alpine animated fadeIn"></i>
+	<i id="ico5" class="fl-artix animated fadeIn"></i>
+	<i id="ico6" class="fl-apple animated fadeIn"></i>
+	<i id="ico7" class="fl-budgie animated fadeIn"></i>
+	<i id="ico8" class="fl-centos animated fadeIn"></i>
+	<i id="ico9" class="fl-coreos animated fadeIn"></i>
+	<i id="ico10" class="fl-debain animated fadeIn"></i>
+	<i id="ico11" class="fl-deepin animated fadeIn"></i>
+	<i id="ico12" class="fl-devuan animated fadeIn"></i>
+	<i id="ico13" class="fl-docker animated fadeIn"></i>
+	<i id="ico14" class="fl-elementary animated fadeIn"></i>
+	<i id="ico15" class="fl-fedora animated fadeIn"></i>
+	<i id="ico16" class="fl-ferris animated fadeIn"></i>
+	<i id="ico17" class="fl-freebsd animated fadeIn"></i>
+	<i id="ico18" class="fl-gentoo animated fadeIn"></i>
+	<i id="ico19" class="fl-illumos animated fadeIn"></i>
+	<i id="ico20" class="fl-kali-linux animated fadeIn"></i>
+	<i id="ico21" class="fl-linuxmint animated fadeIn"></i>
+	<i id="ico22" class="fl-mageia animated fadeIn"></i>
+	<i id="ico23" class="fl-manjaro animated fadeIn"></i>
+	<i id="ico24" class="fl-mandriva animated fadeIn"></i>
+	<i id="ico25" class="fl-nixos animated fadeIn"></i>
+	<i id="ico26" class="fl-openbsd animated fadeIn"></i>
+	<i id="ico27" class="fl-opensuse animated fadeIn"></i>
+	<i id="ico28" class="fl-pop-os animated fadeIn"></i>
+	<i id="ico29" class="fl-raspberry-pi animated fadeIn"></i>
+	<i id="ico30" class="fl-redhat animated fadeIn"></i>
+	<i id="ico31" class="fl-sabayon animated fadeIn"></i>
+	<i id="ico32" class="fl-slackware animated fadeIn"></i>
+	<i id="ico33" class="fl-solus fadeIn animated"></i>
+	<i id="ico34" class="fl-tux animated fadeIn"></i>
+	<i id="ico35" class="fl-ubuntu animated fadeIn"></i>
+	<i id="ico36" class="fl-void animated fadeIn"></i>
+	<i id="ico37" class="fl-zorin animated fadeIn"></i>
+	  </form>
   <form id="aboutme" style="display:none">
 	<h2>About Me</h2><br>
-	<div>
+	<div id="aboutmediv">
 	  So I am 16 year old student.&nbsp;I am an India.Loves to explore GNU/Linux.&nbsp;SO I wanna be an pentester or a security analyst.&nbsp;
 	I plan to crack oscp and get certified so that I can fulfill my ambition.&nbsp;
 	So I started My hacking journey at the age of 15.&nbsp;I used to watch some unboxing videos and 1 day I saw a video in which
@@ -41,7 +81,7 @@
 	Taking a path which is explored by none around me.&nbsp;Then heard of Parrot Security and it is more better and lightweight than kali.&nbsp;
 	So I decided to take that and now also I'm on it.&nbsp;In between these I switched to Arch as everyone said it is difficult to install.&nbsp;I lob challanges.&nbsp;So I installed it.&nbsp;
 	But it needs a lot time to setup other things like sound,brightness etc ( and I am lazy).&nbsp;So after a few weeks I switched back to parrot.&nbsp;
-	Now I got a new Oppo Remo 2F which has a good specs 8G RAM and 128G space.&nbsp;But now I feel like it was a mistake.&nbsp;I googled everywhere and 
+	Now I got a new Oppo Reno 2F which has a good specs 8G RAM and 128G space.&nbsp;But now I feel like it was a mistake.&nbsp;I googled everywhere and 
 	there is no kernel source code of this.&nbsp;And worse is no twrp,no custom ROM.&nbsp;So even if I got a wificard , I'm only able to 
 	use it on PC.&nbsp;And I'm not able to develop kernel etc.&nbsp;It's now like using a Proprietary OS.
 	<br><br>
@@ -58,6 +98,8 @@
   </form>
   <form id="lang" style="display:none">
 	<h2>Languages</h2>
+	<div id="langdiv">
+	  <br><br><br><br>
 	<h4>Learnt</h4>
 	<ul>
 		<li>Python 3</li>
@@ -70,12 +112,14 @@
 	</ul>
 	<h4>Need To Learn</h4>
 	<ul>
-		<li>Java</li>
-		<li>C++</li>
+		<li>Kotlin</li>
+		<li>Rust</li>
 		<li>Assembly Language(asm)</li>
 	</ul>
+	</div>
   </form>
   	<div id="sidenavi" class="sidenav1">
+	  <a onclick=home() id="homehover">Home</a>
 	  <a onclick=aboutme() id="aboutmehover">About Me</a>
 	  <a onclick=langs() id="langhover">Languages</a>
 	  <a onclick=project() id="projecthover">My Projects</a>
@@ -84,35 +128,38 @@
 	</div>
 <form id="projects" style="display:none">
 	<h2>My Projects</h2>
+	<div id="projdiv">
+	  <br><br><br>
 	<ul>
-	  <a href="https://gitlab.com/parrothacker1/msf-auto" id="link12" ><li>msf-auto</li></a>
-	  <a href="https://gitlab.com/parrothacker1/i3" id="link13"><li>i3</li></a>
+	  <a style="font-size:34px" href="https://gitlab.com/parrothacker1/msf-auto" id="link12" ><li>msf-auto</li></a>(No longer available)
+	  <a style="font-size:34px" href="https://gitlab.com/parrothacker1/termux-login" id="link16" ><li>termux-login</li></a>
+	  <a style="font-size:34px" href="https://gitlab.com/parrothacker1/i3" id="link13"><li>i3</li></a>
 	</ul>
+	</div>
   </form>
   <form id="os" style="display:none">
 	<h2>Operating Systems</h2>
-	<h4> <i class="fa fa-windows" id="osico1" style="color:#FF0000"></i>&nbsp; Windows</h4>
+	<div id="osdiv">
+	<h4> <i class="fa fa-windows" id="osico1" style="color:#0000FF"></i>&nbsp; Windows</h4>
 	<ul>
 		<li>Windows 7</li>
 		<li>Windows 10</li>
 		<li>Windows XP</li>
 	</ul>
-	<h4> <i class="fa fa-linux" id="osico2" style="color:#FF0000"></i>&nbsp;Linux</h4>
+	<h4> <i class="fa fa-linux" id="osico2" style="color:#0000FF"></i>&nbsp;Linux</h4>
 	<ul>
 		<li>Kali Linux</li>
 		<li onclick=arch()>Arch Linux</li>
-		<li onclick=parrotsec()><u>Parrot Security OS</u></li>
+		<li onclick=parrotsec()>Parrot Security OS</li>
 		<li>Debian</li>
 	    <li>Tails OS</li>
 	</ul>
 	<br>
-	<div>
-	  <h4>Currently Running</h4><i onclick=arch()>Arch Linux</i><br><br>
-	  &emsp;<a id="link15"><b style="font-size:44px"><i><u>BTW I Use Arch !!!!!!!</u></i></b></a>
+	  <h4>Currently Running</h4><font onclick=arch()>Arch Linux</font><br><br>
+	  &emsp;<a id="link15"><b><em><u>BTW I Use Arch !!!!!!!</u></em></b></a>
 	  <br>
-	</div>
 	<h3 style="font-size:80px">Review</h3>
-	<h5>Parrot Security OS</h5>
+	<h4>Parrot Security OS</h4>
 		<div>
 			It is the best hacking distro ever used.&nbsp;
 			It is smooth,lightweight and yeah it is more<br>
@@ -127,7 +174,7 @@
 			<br>
 			  <br><img src="photo/parrot.png"><br><br>
 		</div>
-	<h5>Arch Linux</h5>
+	<h4>Arch Linux</h4>
 		<div>
 			It is a highly lightweight Distro.&nbsp;It can run on even a 1 gig RAM system<br>
 			Only the hard part is that it's installation and setup is a bit hard and you need to be a master linux inorder to use it.&nbsp;But with the help of Google or DuckDuckGO
@@ -140,7 +187,7 @@
 		<br><br>
 		<img src="photo/arch.png"><br><br>
 		  </div>
-	<h5>Kali Linux</h5>
+	<h4>Kali Linux</h4>
 		<div>
 			Another hacking distro which is used all over the world.&nbsp;The OS which comes into mind when we hear "hacking".&nbsp;Now this distro is also good like Parrot Security OS.&nbsp;
 			But it needs about 8gig RAM to ensure smooth running.&nbsp;On a 4gig RAM system it get's headted up and when we start and IDE like VSCode or else,we feel like we are using Windows.&nbsp;
@@ -155,7 +202,7 @@
 		<br><br>
 		  <img src="photo/kali.png"><br><br>
 		 </div>
-	<h5>Debian</h5>
+	<h4>Debian</h4>
 		<div>
 			Like Arch Linux,Debain is also lightweight and it is easy to install.&nbsp;Both the Parrot Security OS and Kali Linux is based on Debian OS.&nbsp;Debian is easy to use and if you are new to linux,I recommend you to start with Debain(You may see to start from Ubuntu on search engines but Debian is the best to start)&nbsp;
 			It can run on a 1gig RAM system and it is smooth.&nbsp;Like Arch Linux,Debian also have a wiki where you can solutions for your errors and also learn programming,etc.&nbsp;
@@ -163,7 +210,7 @@
 	<br><br>
 	<img src="photo/deb.png"><br><br>
 		  </div>
-	<h5>Tails OS</h5>
+	<h4>Tails OS</h4>
 	<div>
 	  It is a debian based distro designed for high anomality.&nbsp;It erases all files before it switches off thus leaved behind no traces.&nbsp;
 	  It starts Tor by default and it creates a new user at every boot even if persistent.&nbsp;It only save browser files,all other files are wiped.&nbsp;It is mainly used by journalists,criminals,etc like people.&nbsp;
@@ -173,7 +220,7 @@
 	<br><br>
 	<img src="photo/tails.svg"><br><br>
 	</div>
-	<h5>Windows</h5>
+	<h4>Windows</h4>
 		<div>
 			As you know Windows is mainly desgined for day-to-day use and for ease of use.&nbsp;It is not recommended for neither hacking nor programming.&nbsp;It is designed for normal use like,creating document files,photoshop,etc.&nbsp;Windows is a widely Used OS.&nbsp;
 			If you are on Windows 7 it is recommended to switch to 10 as 7 is no more supported and Win10 is more secured compared to Win7.(Saying from Experience).&nbsp; And the most secure is Linux.&nbsp;
@@ -182,10 +229,11 @@
 		<br><br>
 		<img src="photo/win.svg"><br><br>
 			</div>
+	</div>
   </form>
 	<form id="disclaimer" style="display:none">
 	  <h2>Before Messaging ME</h2>
-	  <div>
+	  <div id="disdiv">
 		So before messages please do read this.This is something I want you to focus.So please consider it's importance and read.<br><br>
 		So there are many people who think that hacking is a crime and it's only use is to hack someone's facebook or insta or whatever.&nbsp;This is to them.&nbsp;
 		So Hacking is an art(or you can say a skill) which is used to analyse the security flaws of a system or a website.&nbsp;Yes true there are black hats who hack to gain money or 
@@ -204,17 +252,17 @@
 	<br><br><br><br><br>
 	<form style="text-align:center">
 	<div class="glowblack" id="socialacc">
-	  <i id="telehover" class="fa fa-telegram" onclick=telegram() ></i>&nbsp;&nbsp;
-	  <i id="reddithover" class="fa fa-reddit" onclick=reddit()></i>&nbsp;&nbsp;
-	  <i id="instahover" class="fa fa-instagram" onclick=instagram()></i>&nbsp;&nbsp;
-	  <i id="githbhover" class="fa fa-github" onclick=github()></i>&nbsp;&nbsp;
-	  <i id="gitlbhover" class="fa fa-gitlab" onclick=gitlab() ></i>&nbsp;&nbsp;
-	  <i id="discrdhover" class="fa fa-discord" onclick=discord()></i>
+	  <font id="telehover" class="fa fa-telegram" onclick=telegram() ></font>&nbsp;&nbsp;
+	  <font id="reddithover" class="fa fa-reddit" onclick=reddit()></font>&nbsp;&nbsp;
+	  <font id="instahover" class="fa fa-instagram" onclick=instagram()></font>&nbsp;&nbsp;
+	  <font id="githbhover" class="fa fa-github" onclick=github()></font>&nbsp;&nbsp;
+	  <font id="gitlbhover" class="fa fa-gitlab" onclick=gitlab() ></font>&nbsp;&nbsp;
+	  <font id="discrdhover" class="fa fa-discord" onclick=discord()></font>
 	</div>
 	</form>
   </body>
   <script src="script/scripts.js"></script>
   <script src="script/hover.js"></script>
   <script src="script/dark.js"></script>
-  <script src="script/ip.js"></script>
+  <script src="script/animate.js"></script>
  </html>

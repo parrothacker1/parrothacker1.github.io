@@ -4,10 +4,43 @@ html {
 #link14 {
   font-size:45px;
 }
+#aboutmediv {
+  background-color:#ffffff;
+  color:#000000;
+  border-radius:3%;
+  height:1000px;
+  overflow:scroll;
+}
+#osdiv {
+  background-color:#ffffff;
+  color:#000000;
+  border-radius:3%;
+  height:1000px;
+  overflow:scroll;
+}
+#disdiv {
+  background-color:#ffffff;
+  color:#000000;
+  border-radius:3%;
+  height:1000px;
+  overflow:scroll;
+}
+#langdiv {
+  background-color:#ffffff;
+  color:#000000;
+  border-radius:3%;
+  height:900px;
+}
+#projdiv {
+  background-color:#ffffff;
+  color:#000000;
+  border-radius:3%;
+  height:700px;
+}
 body {
   background-color:#000000;
   color:#ffffff;
-  font-size:28px;
+  font-size:34px;
   text-align:center;
   font-family:Baloo;
 }
@@ -46,12 +79,12 @@ body {
   right: 9.5;
   background-color:#0000ff;
 }
-#aboutmehover {top:280px}
-#aboutuhover {top:340px}
-#langhover {top:340px}
-#projecthover {top:400px}
-#oshover {top:459.5px}
-#disclaimerhover {top:550px}
+#homehover {top:180px}
+#aboutmehover {top:240px}
+#langhover {top:300px}
+#projecthover {top:360px}
+#oshover {top:419.5px}
+#disclaimerhover {top:510px}
 #pro {
   border: 2.2px solid #000000;
   text-align:center;
@@ -76,11 +109,28 @@ form {
 ul {
   font-size:24.4px;
 }
+li {
+  font-size:34px;
+}
 a {
   text-decoration:none;
   color:#ff0000;
 }
-
+#link1 {color:#0000ff;}
+#link2 {color:#0000ff;}
+#link3 {color:#0000ff;}
+#link4 {color:#0000ff;}
+#link5 {color:#0000ff;}
+#link6 {color:#0000ff;}
+#link7 {color:#0000ff;}
+#link8 {color:#0000ff;}
+#link9 {color:#0000ff;}
+#link10 {color:#0000ff;}
+#link11 {color:#0000ff;}
+#link12 {color:#0000ff;}
+#link13 {color:#0000ff;}
+#link15 {color:#0000ff;}
+#link16 {color:#0000ff;}
 .glowblack {
   font-size: 80px;
   color: #000000;
@@ -96,7 +146,7 @@ a {
   to {
     text-shadow: 0 0 29px #ff0000, 0 0 39px #ff0000, 0 0 49px #ff0000, 0 0 59px #ff0000, 0 0 69px #ff0000, 0 0 79px #ff0000, 0 0 89px #ff0000;
   }
-}
+  }
 .glowwhite {
   font-size: 80px;
   color: #ffffff;
@@ -106,13 +156,35 @@ a {
 }
 
 @-webkit-keyframes glowwhite {
-  from {
+  0% {
     text-shadow: 0 0 1px #0000ff, 0 0 11px #0000ff, 0 0 21px #0000ff, 0 0 31px #0000ff, 0 0 41px #0000ff, 0 0 51px #0000ff, 0 0 61px #0000ff;
   }
-  to {
+  100% {
     text-shadow: 0 0 29px #0000ff, 0 0 39px #0000ff, 0 0 49px #0000ff, 0 0 59px #0000ff, 0 0 69px #0000ff, 0 0 79px #0000ff, 0 0 89px #0000ff;
   }
 }
-.float {
-  
+i {
+  display:none;
+  font-size:580px;
+  color:#ff0000;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+ }
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
