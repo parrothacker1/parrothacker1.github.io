@@ -1,8 +1,11 @@
-function telegram() {window.open("https://t.me/parrothacker1");}
-function reddit() {window.open("https://www.reddit.com/u/parrothacker1");}
-function instagram() {window.open("https://www.instagram.com/parrothacker1");}
-function github() {window.open("https://www.github.com/parrothacker1");}
-function gitlab() {window.open("https://www.gitlab.com/parrothacker1");}
-function discord() {window.open("https://discord.com/users/parrothacker1#6786");}
-function msfauto() {window.open("https://www.github.com/parrothacker1/msf-auto");}
-
+function anim1() {
+	document.getElementById("animtxt1").className="anitxt";
+}
+function anim2() {
+	document.getElementById("animtxt2").className="anitxt";
+}
+anim1();
+setTimeout(anim2,2900);
+ScrollReveal({reset:true}).reveal(".about",{delay:500});
+ScrollReveal({reset:true}).reveal(".skill",{delay:1000});
+ScrollReveal({reset:true}).reveal(".last",{delay:1000});
