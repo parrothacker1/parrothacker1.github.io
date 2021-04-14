@@ -7,5 +7,5 @@ function anim2() {
 anim1();
 setTimeout(anim2,2900);
 ScrollReveal({reset:true}).reveal(".about",{delay:500});
-ScrollReveal({reset:true}).reveal(".skill",{delay:1000});
-ScrollReveal({reset:true}).reveal(".last",{delay:1000});
+ScrollReveal({reset:true}).reveal(".skill",{delay:500});
+ScrollReveal({reset:true}).reveal(".last",{delay:500});
