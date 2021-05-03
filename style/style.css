@@ -43,6 +43,13 @@ a {
   font-size:50px;
   color:White;
 }
+.me b {
+  font-size:45px;
+}
+.me i {
+  margin-left:40px;
+  color:#ff0000;
+}
 .prof_mob {
   max-width:50%;
   border-radius:50%;
