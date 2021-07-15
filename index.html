@@ -1,77 +1,213 @@
 <html>
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 	<link rel="icon" type="image/x-icon" href="photo/logo.ico">
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-	
 	  <title>h4ck3r@parrot</title>
   </head>
+<style>
+li {
+	margin:1rem;
+	font-size:2rem;
+}
+ul {
+	list-style:none;
+}
+body {
+  background-color:#000000;
+  font-size:5vw;
+  font-family:Serif;
+}
+* {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  tap-highlight-color:transparent;
+  -moz-tap-hightlight-color:transparent;
+  -webkit-tap-highlight-color:transparent;
+}
+.anitxt {
+  text-align:center;
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink .50s step-end infinite;
+  white-space: nowrap;
+}
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+@keyframes reveal {
+  0% {
+        opacity:0;
+  }
+  50% {
+        opacity:0.5;
+  }
+  100% {
+        opacity:1;
+  }
+}
+#social i {
+	font-size:2rem;
+	margin:0.8rem;
+}
+.ico-color {
+	font-size:2.3rem;
+	color:Red;
+}
+</style>
   <body>
-  <div id="mob">
-	<div style="text-align:center" class="intro">
-	  <b  class="head">h4ck3r@parrot <br> parrothacker1</b></div><br>
-	<img class="prof_mob" src="photo/profile.jpg"><br><br>
-	<div class="soc">
-	  <a href="https://www.instagram.com/parrothacker1"><i class="fa fa-instagram"></i></a>
-	  <a href="https://t.me/parrothacker1"><i class="fa fa-telegram"></i></a>
-	  <a href="https://www.github.com/parrothacker1"><i class="fa fa-github"></i></a>
-	  <a href="https://www.reddit.com/u/parrothacker1"><i class="fa fa-reddit"></i></a>
-	  <a href="https://discordapp.com/users/806844002271494144"><i class="fa fa-discord"></i></a>
+	  <div class="container text-center text-white" style="margin-top:0.3rem">
+		<h1>h4ck3r@parrot</h1>
+		<h2>parrothacker1</h2>
 	</div>
-	<br>
-	<br><div style="text-align:center">
-	   <div style="color:red;font-size:8vw;text-align:center" class="" id="animtxt1" >Give Me a text editor</div><br>
-	  <div style="color:red;font-size:8vw;text-align:center" class="none" id="animtxt2">and you will know</div><br>
-	  <div style="color:red;font-size:8vw;text-align:centet" class="none" id="animtxt3">$whoami</div>
-	  </div><br>
-	  <br><br><br><br><br>
-	<div  style="color:white" class="about">
-	  <br>
-		<b style="font-size:10vw">About Me</b><br><br>
+	<div style="color:Red;font-size:2.5rem;margin-top:0.5rem" id="clock" class="container text-center">
+		<div class="container" style="height:auto;color:Black">Null
+Null
+Null
+</div>
+	</div>	
+	<div class="container text-center" style="margin-top:1rem">
+		<img src="photo/profile.jpg" class="rounded-circle img-fluid">
+	</div>
+	<div style="margin-top:2rem;color:Red;font-size:1.7rem" class="container text-center" id="typing">
+		<div class="container" style="height:auto;color:Black">
+		Null
+		Null
+		Null
+		Null</div>
+	</div>
+	<div style="margin-top:5rem" class="container text-left text-white">
+		<b style="font-size:2rem">About Me</b>
+		<br>
 		Hi There! &#9996; <br><br>
-		I'm a 16 year old kiddo doing some hacking stuff &#128520;.Well learning all one by one.I have 
-		been here for the last one year.And still continuing.I love GNU/Linux and spend time exploring 
+		I'm a 16 year old kiddo doing some hacking stuff &#128520;.Well learning all one by one.I have
+		been here for the last one year.And still continuing.I love GNU/Linux and spend time exploring
 		Linux Distros.I know some web development,kernel development and also some usermod rootkits and
 		other stuff &#128521;&#128519;.
-	  </div><br><br><br>
-	<div style="color:white" class="me">
-	  <b>I am A</b><br>
-	<br><br>
-	  <i>Backend Web Developer</i>
-	  <br><br>
-	  <i>Rustacean</i>
-	  <br>
+
 	</div>
-	<br><br><br>
-	  <div class="skill" style="color:white">
-		<b style="font-size:10vw">Skilled In </b>
-		<ul style="margin-left:1vw">
+	<div style="margin-top:3rem" class="container text-left">
+		<b style="font-size:2rem;color:White">Skilled In</b>
+		<br>
+		<ul class="text-left">
 		<li><i class="ico-color devicon-bash-plain"></i></li>
 		  <li><i class="ico-color devicon-javascript-plain"></i></li>
 		  <li><i class="ico-color devicon-css3-plain-wordmark"></i></li>
 		<li><i class="ico-color devicon-c-plain-wordmark"></i></li>
 		<li><i class="ico-color devicon-html5-plain-wordmark"></i></li>
-		  <li><i class="ico-color devicon-javascript-plain-wordmark"></i></li>
 		  <li><i class="ico-color devicon-java-plain-wordmark"></i></li>
 		  <li><i class="ico-color devicon-python-plain-wordmark"></i></li>
 		  <li><i class="ico-color devicon-mysql-plain-wordmark"></i></li>
 		  <li><i class="ico-color devicon-postgresql-plain-wordmark"></i></li>
 		  <li><i class="ico-color devicon-rust-plain"></i></li>
+		  <li><i class="ico-color devicon-bootstrap-plain-wordmark"></i></li>
+		  <li><i class="ico-color devicon-react-original-wordmark"></i></li>
 		</ul>
-	  </div>
-	  <br><br>
-	<div class="last" style="color:white;text-align:center">
-	  <img style="margin-left:1vw;width:50vw" src="photo/arch.png"><br><br>
-	  <b style="font-size:8vw">Arch Linux User </b>
 	</div>
-	<br><br><br><br>
-	<div style="color:white;text-align:center;font-size:3.5vw">
-	 &copy;&nbsp;Copyright&ensp;<b>parrothacker1</b>.&nbsp; All Rights Reserved
+	<div class="container text-center" style="margin-top:5rem">
+		<img src="photo/parrot.png" class="round-circle img-fluid">
 	</div>
-  </div>
-  <script src="script/scripts.js"></script>
+	<div class="container text-center" style="margin-top:3rem" id="social">
+		<i id="insta" class="ico-color fa fa-instagram"></i>
+		<i id="tg" class="ico-color fa fa-telegram"></i>
+		<i id="gh" class="ico-color fa fa-github"></i>
+		<i id="rd" class="ico-color fa fa-reddit"></i>
+		<i id="ds" class="ico-color fa fa-discord"></i>
+	</div>
+	<div class="container text-center text-white" style="margin-top:3rem">
+		<b style="font-size:0.75rem">&copy; Copyright All Rights Reserved</b>
+	</div>
   </body>
+  <script type="text/babel">
+	  class Type extends React.Component {
+	  	constructor(props) {
+			super(props);
+			this.state={
+				i:0,
+				print:"",
+			};
+		}
+		componentDidMount() {
+			this.timerId=setInterval(
+				() => this.typer(),
+				125);
+		}
+		componentWillUnmount() {
+			clearInterval(this.timerId);
+		}
+		typer() {
+			let i1=this.state.i+1;
+			let text=new String("Give Me a text editor and you will know $whoami");
+			let new_text=text.substring(0,i1);
+			if (i1-1<text.length) {
+				this.setState({
+					i:i1,
+					print:new_text,
+				});
+			}
+		}
+		render() {
+			return(
+				<div>{this.state.print}</div>
+			);
+		}
+	  }
+	  class Clock extends React.Component {
+		constructor(props) {
+		super(props);
+		this.state = {date: new Date()};
+		}
+		componentDidMount() {
+		this.timerID = setInterval(
+		() => this.tick(),
+		1000);
+		}
+		componentWillUnmount() {
+		clearInterval(this.timerID);
+		}
+		tick() {
+		this.setState({
+		date: new Date()
+		});
+		}
+		render() {
+		return (
+		<div>{this.state.date.toLocaleTimeString()}</div>);
+		}
+	}
+	ReactDOM.render(<Type />,document.getElementById('typing'));
+	ReactDOM.render(<Clock />,document.getElementById('clock'));
+	</script>
+	<script>
+		document.getElementById("insta").addEventListener("click",function() {
+					window.open("https://www.instagram.com/parrothacker1","_self");
+				});
+		document.getElementById("tg").addEventListener("click",function() {
+					window.open("https://t.me/parrothacker1","_self");
+				});
+		document.getElementById("gh").addEventListener("click",function() {
+					window.open("https://www.github.com/parrothacker1","_self");
+				});
+		document.getElementById("rd").addEventListener("click",function() {
+					window.open("https://www.reddit.com/u/parrothacker1","_self");
+				});
+		document.getElementById("ds").addEventListener("click",function() {
+					window.open("https://discordapp.com/users/806844002271494144","_self");
+				});
+	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
 </html>
