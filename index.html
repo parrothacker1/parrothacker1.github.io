@@ -124,7 +124,7 @@ Null
 		<i id="ds" class="ico-color fa fa-discord"></i>
 	</div>
 	<div class="container-fluid text-center text-white" style="margin-top:3rem">
-		<b style="font-size:0.75rem">&copy; Copyright All Rights Reserved</b>
+		<b style="font-size:0.75rem">&copy; Copyright All Rights Reserved<div id="date" style="color:Red"></div></b>
 	</div>
   </body>
   <script type="text/babel">
@@ -161,6 +161,34 @@ Null
 			);
 		}
 	  }
+	  class DateNum extends React.Component {
+	  	constructor(props) {
+			super(props);
+			this.state={
+				dt:""
+			};
+		}
+		componentDidMount() {
+			this.id=setInterval(
+				() => this.new(),
+				100);
+		}
+		componempntWillUnmount() {
+			clearInterval(this.id);
+		}
+		new() {
+			let dt=new Date();
+			let day=dt.toLocaleDateString();
+			this.setState({
+				dt:day
+			});
+		}
+		render() {
+			return(
+				<div>{this.state.dt}</div>
+			);
+		}
+	  }
 	  class Clock extends React.Component {
 		constructor(props) {
 		super(props);
@@ -186,6 +214,7 @@ Null
 	}
 	ReactDOM.render(<Type />,document.getElementById('typing'));
 	ReactDOM.render(<Clock />,document.getElementById('clock'));
+	ReactDOM.render(<DateNum />,document.getElementById('date'));
 	</script>
 	<script>
 		document.getElementById("insta").addEventListener("click",function() {
