@@ -106,6 +106,9 @@ body {
 	color:Red;
 	font-size:1.5rem;
 }
+#darkbtn {
+	color:White;
+}
 @media screen and (min-width:600px) {
 	.ico-color {
 		font-size:4rem;
@@ -144,6 +147,9 @@ body {
 }
 </style>
   <body class="container-fluid">
+	  <div class="container text-left" style="margin-top:1rem;position:fixed">
+		  <i id="darkbtn" class="fa fa-sun"></i>
+	  </div>
 	  <div class="container-fluid text-center text-white" style="margin-top:0.3rem">
 		<h1>h4ck3r@parrot</h1>
 		<h2>parrothacker1</h2>
@@ -154,7 +160,7 @@ body {
 </div>
 	</div>	
 	<div class="container-fluid text-center" style="margin-top:1rem">
-		<img src="photo/profile.jpg" class="rounded-circle img-fluid">
+		<img src="photo/profile2.jpg" class="rounded-circle img-fluid">
 	</div>
 	<div class="typing container-fluid text-center" id="typing">
 		<div class="container-fluid" style="height:auto;color:Black">
@@ -362,6 +368,9 @@ body {
 	ReactDOM.render(<Clock />,document.getElementById('clock'));
 	ReactDOM.render(<DateNum />,document.getElementById('date'));
 	ReactDOM.render(<IPExtractor />,document.getElementById('ip'));
+	</script>
+	<script>
+		
 	</script>
 	<script>
 		document.getElementById("insta").addEventListener("click",function() {
