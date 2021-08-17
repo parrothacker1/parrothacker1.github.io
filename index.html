@@ -107,7 +107,18 @@ body {
 	font-size:1.5rem;
 }
 #darkbtn {
+	transition:0.4s;
+	font-size:2rem;
 	color:White;
+}
+#darkbtn:hover {
+	font-size: 3rem;
+}
+#darkbtndiv {
+	margin-left:-1rem;
+}
+#profile {
+	transition:0.4s;
 }
 @media screen and (min-width:600px) {
 	.ico-color {
@@ -144,15 +155,24 @@ body {
 	#ip li {
 		font-size:2.5rem;
 	}
+	#darkbtn {
+		font-size: 5rem;
+	}
+	#darkbtn:hover {
+		font-size:6rem;
+	}
+	#darkbtndiv {
+		margin-right:0;
+	}
 }
 </style>
-  <body class="container-fluid">
-	  <div class="container text-left" style="margin-top:1rem;position:fixed">
-		  <i id="darkbtn" class="fa fa-sun"></i>
+  <body class="container-fluid" style="transition:0.4s">
+	  <div class="container-fluid text-right" id="darkbtndiv" style="margin-top:1rem;position:fixed">
+		  <i id="darkbtn" class="fa fa-moon"></i>
 	  </div>
-	  <div class="container-fluid text-center text-white" style="margin-top:0.3rem">
-		<h1>h4ck3r@parrot</h1>
-		<h2>parrothacker1</h2>
+	  <div class="container-fluid text-center" style="margin-top:0.3rem">
+		<h1 id="heading1" style="color:white;">h4ck3r@parrot</h1>
+		<h2 id="heading2" style="color:white;">parrothacker1</h2>
 	</div>
 	<div style="color:Red;font-size:2.5rem;margin-top:0.5rem" id="clock" class="container-fluid text-center">
 		<div class="container-fluid" style="height:auto;color:Red">
@@ -160,7 +180,7 @@ body {
 </div>
 	</div>	
 	<div class="container-fluid text-center" style="margin-top:1rem">
-		<img src="photo/profile2.jpg" class="rounded-circle img-fluid">
+		<img id="profile" src="photo/profile2.jpg" class="rounded-circle img-fluid">
 	</div>
 	<div class="typing container-fluid text-center" id="typing">
 		<div class="container-fluid" style="height:auto;color:Black">
@@ -170,8 +190,8 @@ body {
 		Null</div>
 	</div>
 	<div class="text-center" style="margin-top:2.5rem" id="ip"></div>
-	<div style="margin-top:5rem" class="text-center text-white">
-		<b style="font-size:2rem;color:Red">About Me</b>
+	<div style="margin-top:5rem;color:white;" id="text1" class="text-center">
+		<b id="aboutme" style="font-size:2rem;color:Red">About Me</b>
 		<br>
 		Hi There! &#9996; <br><br>
 		I'm a 16 year old kiddo doing some hacking stuff &#128520;.Well learning all one by one.I have
@@ -179,9 +199,9 @@ body {
 		Linux Distros.I know some web development,kernel development and also some usermod rootkits and
 		other stuff &#128521;&#128519;.
 	</div>
-	<div class="text-center text-white">It's better not to mention in what all i'm skilled cuz it vaies from time to time&#128516; So better ask me to know the current state&#128579;</div>
+	<div class="text-center" id="text2" style="color:white">It's better not to mention in what all i'm skilled cuz it vaies from time to time&#128516; So better ask me to know the current state&#128579;</div>
 	<div class="container-fluid text-left" style="margin-top:5rem">
-		<b style="font-size:2rem;color:White">Skilled In</b>
+		<b id="skilledin" style="font-size:2rem;color:White">Skilled In</b>
 		<br>
 		<ul class="text-left" id="langs">
 		  <li class="li-color"><i class="ico-color devicon-bash-plain"></i>
@@ -301,14 +321,14 @@ body {
 			render() {
 				if (this.state.load) {
 					return(
-					<div><div>{this.state.ip}</div>
-					<div>{this.state.country}</div>
-					<div>{this.state.state}</div>
-					<div>{this.state.place}</div></div>
+					<div><div id="ipadd">{this.state.ip}</div>
+					<div id="ipcon">{this.state.country}</div>
+					<div id="ipstate">{this.state.state}</div>
+					<div id="ipplace">{this.state.place}</div></div>
 					);
 				} else {
 					return(
-					<div>Your IP is hidden ! HackerBoy !!!</div>
+					<div id="ipadd">Your IP is hidden ! HackerBoy !!!</div>
 					);
 				}
 			}
@@ -337,7 +357,7 @@ body {
 		}
 		render() {
 			return(
-				<div class="datedisplay">{this.state.dt}</div>
+				<div id="datedisplay" class="datedisplay">{this.state.dt}</div>
 			);
 		}
 	  }
@@ -369,9 +389,7 @@ body {
 	ReactDOM.render(<DateNum />,document.getElementById('date'));
 	ReactDOM.render(<IPExtractor />,document.getElementById('ip'));
 	</script>
-	<script>
-		
-	</script>
+	<script src="./darkmode.js"></script>
 	<script>
 		document.getElementById("insta").addEventListener("click",function() {
 					window.open("https://www.instagram.com/parrothacker1","_self");
