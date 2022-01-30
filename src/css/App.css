@@ -1,0 +1,61 @@
+.logo {
+  height:38vmin;
+  pointer-events: none;
+  border-radius:25px;
+
+}
+.first {
+    min-height:100vh;
+    min-width:auto;
+    max-height:150vh;
+    max-width:auto;
+}
+.first .intro-text {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    font-size:3rem;
+}
+.intro-text {
+    font-family: "Times New Roman", Times, serif;
+}
+.App-header {
+  background-color: #000;
+  color:#fff;
+  min-height: 100vh;
+}
+.intro {
+    font-size:1rem;
+    width:20rem;
+}
+.parent_info,.list,.list-ele {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    width:100%;
+    font-size:1rem;
+    background-color:#fff;
+    color:#000;
+}
+.parent_info {
+    box-sizing:border-box;
+    width:100%;
+}
+@media screen and (min-width:768px) {
+    .intro {
+        font-size:1.5rem;
+        width:35rem;
+    }
+    .list-ele {
+        font-size:1.5rem;
+    }
+    .cpy {
+        font-size:1.5rem;
+    }
+    .logo {
+       height:42vmin;
+    }
+    .intro-text {
+        font-size:5rem;
+    }
+}
