@@ -1,61 +1,161 @@
-.logo {
-  height:38vmin;
-  pointer-events: none;
-  border-radius:25px;
-
-}
-.first {
-    min-height:100vh;
-    min-width:auto;
-    max-height:150vh;
-    max-width:auto;
-}
-.first .intro-text {
-    -webkit-user-select:none;
-    -moz-user-select:none;
+* {
     user-select:none;
-    font-size:3rem;
-}
-.intro-text {
-    font-family: "Times New Roman", Times, serif;
 }
 .App-header {
-  background-color: #000;
-  color:#fff;
-  min-height: 100vh;
+    min-height:40vmin;
+    width:"100%";
+    background-color:#FFFFFF
+}
+.first {
+    height:110vh;
+    background-image:url(../background.jpg);
+    clip-path: polygon(0 0,100% 0,100% 65%,0 100%);
+    background-size: contain;
+    box-shadow:inset 0 0 0 110vh rgba(0, 0, 0, 0.45);
+    margin-bottom: 15vh;
+}
+.logo {
+    border-radius:25px;
+    height:45vh;
+}
+.top-bar {
+    height:5.5vh;
+    background-color: #FFFFFF;
+    margin-bottom: 4vh;
+}
+.top-bar .logo {
+    height:1.5vw;
+    margin-left:.5vw;
+    transition: 0.2s;
+}
+.top-bar .logo:hover {
+    height:1.8vw;
+}
+.top-bar .icons {
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+    transition: 0.2s;
+}
+.top-bar .icons:hover {
+    font-size:1.8vw;
 }
 .intro {
-    font-size:1rem;
-    width:20rem;
+    height:65vh;
 }
-.parent_info,.list,.list-ele {
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    user-select:none;
-    width:100%;
-    font-size:1rem;
-    background-color:#fff;
+.intro .text {
+    color:#FFFFFF;
+    font-size:1.7vw;
+}
+.intro .text b {
+    font-size:1.9vw;
+}
+.card {
+    background-color: #000;
+    width:86%;
+    margin-top:2.5vh;
+    margin-bottom:2.5vh;
+    border-radius: 15px;
+}
+.card .card-text {
+   width:98%;
+   margin:2%;
+   margin-top:4%;
+   margin-bottom:4%;
+   color:#FFFFFF;
+   font-size:1.7vw; 
+}
+.card .card-text b {
+    font-size:2vw;
+    margin-bottom:5%;
+    font-weight: 600;
+}
+footer {
+    height:15vh;
+    margin-top:10vh;
+    background-color: #000;
+}
+footer font {
+    color:#FFFFFF;
+    font-size:1.4vw;
+}
+.interest-card {
+    height:11vh;
+    margin-top:1.5vh;
+    font-size:1.7vw;
+    margin-bottom:1.5vh;
+    border-radius: 15px;
+    background-color: #000;
+    color: #FFF;
+    transition:0.35s;
+}
+.interest-card:hover {
+    height:13vh;
+    font-size:2vw;
+    background-color: #FFF;
     color:#000;
 }
-.parent_info {
-    box-sizing:border-box;
-    width:100%;
-}
-@media screen and (min-width:768px) {
-    .intro {
-        font-size:1.5rem;
-        width:35rem;
-    }
-    .list-ele {
-        font-size:1.5rem;
-    }
-    .cpy {
-        font-size:1.5rem;
+@media screen and (max-width:480px) {
+    .first {
+        height:84vh;
+        background-size: cover;
+        clip-path: polygon(0 0,100% 0,100% 84%,0 100%);
+        margin-bottom:5vh;
     }
     .logo {
-       height:42vmin;
+        height:28vh;
+        border-radius: 10px;
     }
-    .intro-text {
-        font-size:5rem;
+    .intro {
+        height:70vh;
+        flex-direction: column-reverse;
+    }
+    .intro .text {
+        font-size:3.7vw;
+    }
+    .intro .text b {
+        font-size:4.5vw;
+    }
+    .top-bar {
+        height:3vh;
+    }
+    .top-bar .logo {
+        height:3.2vw
+    }
+    .top-bar .logo:hover {
+        height:3.5vw;
+    }
+    .top-bar .icons {
+        font-size: 3.2vw;
+    }
+    .top-bar .icons:hover {
+        font-size:3.5vw;
+    }
+    footer {
+        height: 5vh;
+        margin-top:0.5vh;
+    }
+    footer font {
+        font-size: 2.5vw;
+    }
+    .card {
+        width:92%;
+    }
+    .card .card-text {
+        font-size:3.3vw;
+        width:99.8%;
+        margin-top:6%;
+        margin-bottom:6%;
+    }
+    .card .card-text b {
+        font-size:5vw;
+    }
+    .interest-card {
+        height:3vh;
+        border-radius: 10px;
+        font-size: 3.3vw;   
+    }
+    .interest-card:hover {
+        height:5.5vh;
+        font-size:3.8vw;
     }
 }
