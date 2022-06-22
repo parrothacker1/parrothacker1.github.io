@@ -37,7 +37,7 @@ function App() {
 
             </Col>
             <Col fluid className="d-flex flex-wrap justify-content-center align-items-center">
-              <img src={profile} alt="logo" className="logo" />
+              <img src={profile} alt="logo" className="avatar" />
             </Col>
           </Row>
         </Container>
