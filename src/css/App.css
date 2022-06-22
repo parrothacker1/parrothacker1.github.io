@@ -18,6 +18,12 @@
     border-radius:25px;
     height:45vh;
 }
+.avatar {
+  margin: 100px;
+  margin-right: 70px;
+  border-radius: 0.5em;
+  height: 45vh;
+}
 .top-bar {
     height:5.5vh;
     background-color: #FFFFFF;
@@ -41,13 +47,14 @@
 }
 .intro {
     height:65vh;
+    margin-left: 10%;
 }
 .intro .text {
     color:#FFFFFF;
-    font-size:1.7vw;
+    font-size:1.5vw;
 }
 .intro .text b {
-    font-size:1.9vw;
+    font-size:1.7vw;
 }
 .card {
     background-color: #000;
