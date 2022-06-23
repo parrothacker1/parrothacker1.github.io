@@ -19,8 +19,6 @@
     height:45vh;
 }
 .avatar {
-  margin: 100px;
-  margin-right: 70px;
   border-radius: 0.5em;
   height: 45vh;
 }
@@ -47,11 +45,11 @@
 }
 .intro {
     height:65vh;
-    margin-left: 10%;
 }
 .intro .text {
     color:#FFFFFF;
     font-size:1.5vw;
+    margin-left: 10%;
 }
 .intro .text b {
     font-size:1.7vw;
@@ -108,7 +106,7 @@ footer font {
         clip-path: polygon(0 0,100% 0,100% 84%,0 100%);
         margin-bottom:5vh;
     }
-    .logo {
+    .avatar {
         height:28vh;
         border-radius: 10px;
     }
@@ -118,6 +116,7 @@ footer font {
     }
     .intro .text {
         font-size:3.7vw;
+        margin-left: 0;
     }
     .intro .text b {
         font-size:4.5vw;
