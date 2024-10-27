@@ -1,0 +1,90 @@
+baseURL = 'https://parrothacker1.github.io'
+languageCode = 'en-us'
+title = 'h4ck3r@parrot | Portfolio'
+theme = 'hello-friend-ng'
+
+[params]
+  enableRobotsTXT = false
+  enableEmoji = true
+  enableThemeToggle = true
+  disable404 = false
+  enableSharingbuttons = false
+  justifyContent = true
+
+  homeSubtitle = "A cybersecurity enthusiast who also do backend and is currently learning DevOps"
+
+  [params.logo]
+    logoText = "parrothacker1"
+    logoMark = "ph-bold ph-caret-double-right"
+    logoHomeLink = "/"
+
+
+  [params.author]
+    notusername = "h4ck3r@parrot"
+    name = "parrothacker1"
+
+  [params.footer]
+    trademark = 2024
+    copyright = true
+    author = true
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &hearts; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+  [[params.social]]
+    name = "Telegram"
+    url = "https://t.me/parrothacker1"
+    icon = "ph-bold ph-telegram-logo"
+
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/parrothacker1"
+    icon = "ph-bold ph-github-logo"
+
+  [[params.social]]
+    name = "Instagram"
+    url = "https://instagram.com/parrothacker1"
+    icon = "ph-bold ph-instagram-logo"
+
+  [[params.social]]
+    name = "Discord"
+    url = "https://discord.com/users/parrothacker1"
+    icon = "ph-bold ph-discord-logo"
+
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/parrothacker1"
+    icon = "ph-bold ph-linkedin-logo"
+  
+  [[params.social]]
+    name = "Mail"
+    url = "mailto:rajeevgoutham1@proton.me"
+    icon = "ph-bold ph-envelope-simple"
+
+  [[params.social]]
+    name = "X"
+    url = "https://x.com/parrothacker1"
+    icon = "ph-bold ph-x-logo"
+
+[menu]
+  [[menu.main]]
+    identifier = "abouting"
+    name = "About"
+    url = "about/"
+    weight = 1
+    [[menu.main.params]]
+      icon = "ph-bold ph-user"
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "projects/"
+    weight = 2
+    [[menu.main.params]]
+      icon = "ph-bold ph-briefcase"
+  [[menu.main]]
+    identifier = "ctfs"
+    name = "CTFs"
+    url = "https://ctftime.org/user/194001"
+    weight = 3
+    [[menu.main.params]]
+      icon = "ph-bold ph-flag"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>h4ck3r@parrot | Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on h4ck3r@parrot | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Oct 2024 16:15:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Tue, 22 Oct 2024 16:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;never-ending-laugh&#34;&gt;Never Ending Laugh&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;A CTF challenge I made for Cyber0Day&#39;24 using FastAPI.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This challenge shows how to exploit XXE Billion Laughs Attack to do Denial of Service.&lt;/p&gt;&#xA;&lt;h2 id=&#34;foolish-admin&#34;&gt;Foolish Admin&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;A CTF challenge I made for Password&#39;24 using FastAPI.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This challenge helps participants to understand SQL injection,RSA encryption,Image Steganography and JWT exploitation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-backend-projects&#34;&gt;Some backend Projects&lt;/h2&gt;&#xA;&lt;p&gt;Some backend projects i&amp;rsquo;ve made for learning purposes. (Basic CRUD applications)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Wanna checkout more ? Checkout my GitHub page&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 22 Oct 2024 16:14:52 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hello Reader, I am parrothacker1 or parrot (ppl call me that) and I am a 20 year old cybersecurity enthusiast.&lt;/p&gt;&#xA;&lt;p&gt;But my enthusiasm just do not end with cybersec .. I am also into backend development and also DevOps.&lt;/p&gt;&#xA;&lt;p&gt;I primarily use my backend and devops knowledge in making CTFs questions and making people&amp;rsquo;s life harder (but for enthusiasts who love challenges i believe mine give&amp;rsquo;s them a new perspective).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
