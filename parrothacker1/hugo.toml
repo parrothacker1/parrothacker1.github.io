@@ -88,3 +88,10 @@ theme = 'hello-friend-ng'
     weight = 3
     [[menu.main.params]]
       icon = "ph-bold ph-flag"
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "Goutham_Rajeev.pdf"
+    weight = 4
+    [[menu.main.params]]
+      icon = "ph-bold ph-user-square"
